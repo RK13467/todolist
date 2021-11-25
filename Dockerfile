@@ -1,7 +1,6 @@
 #init a base image
 FROM node:12.18.1
 ENV NODE_ENV=production
-RUN apk add --update nodejs npm curl
 #defination of working directory
 COPY ["package.json", "package-lock.json*", "./"]
 
